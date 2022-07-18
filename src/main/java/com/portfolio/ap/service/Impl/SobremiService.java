@@ -1,14 +1,16 @@
 
-package com.portfolio.ap.service;
+package com.portfolio.ap.service.Impl;
 
 import com.portfolio.ap.model.Sobremi;
 import com.portfolio.ap.repository.SobremiRepository;
 import java.util.List;
+
+import com.portfolio.ap.service.ISobremiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SobremiService implements ISobremiService  {
+public class SobremiService implements ISobremiService {
      @Autowired 
      SobremiRepository soRepo;
 

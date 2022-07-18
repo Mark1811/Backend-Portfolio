@@ -16,7 +16,8 @@ public class Personas {
    private String nombre;
    private String apellido;
    private String area;
-   
+
+
     public Personas(){}
 
     public Personas(Long id, String nombre, String apellido, String area) {

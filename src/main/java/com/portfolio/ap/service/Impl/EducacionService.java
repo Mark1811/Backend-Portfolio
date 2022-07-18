@@ -1,9 +1,11 @@
 
-package com.portfolio.ap.service;
+package com.portfolio.ap.service.Impl;
 
 import com.portfolio.ap.model.Educacion;
 import com.portfolio.ap.repository.EducacionRepository;
 import java.util.List;
+
+import com.portfolio.ap.service.IEducacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
