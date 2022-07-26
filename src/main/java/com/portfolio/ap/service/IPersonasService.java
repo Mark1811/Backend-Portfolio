@@ -5,8 +5,8 @@ import java.util.List;
 public interface IPersonasService {
   
     public List<Personas> MostrarPer ();
+    public Object motrarxId(Long id);
 
-    
     public void editarPersona(Personas per);
 
     

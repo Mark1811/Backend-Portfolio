@@ -19,6 +19,11 @@ public class PersonaService implements IPersonasService {
     }
 
     @Override
+    public Object motrarxId(Long id) {
+        return persoRepo.findById(id);
+    }
+
+    @Override
     public void editarPersona(Personas per) {
         persoRepo.save(per);
     }
