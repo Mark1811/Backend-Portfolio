@@ -29,7 +29,7 @@ import org.springframework.validation.BindingResult;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins= "http://localhost:4200/")
+@CrossOrigin(origins="https://portfoliofront-423bb.web.app/")
 public class AuthController {
 
     @Autowired
