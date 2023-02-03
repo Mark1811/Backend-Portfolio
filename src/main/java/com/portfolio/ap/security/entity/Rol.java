@@ -11,7 +11,7 @@ public class Rol {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
-    @Enumerated(EnumType.STRING)
+    @Enumerated(value= EnumType.STRING)
     private RolNombre rolNombre;
 
     public Rol() {

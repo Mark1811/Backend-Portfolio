@@ -21,31 +21,31 @@ import org.springframework.web.bind.annotation.RestController;
  public class ExperienciaController {
     
      @Autowired
-    private IExperienciaService ExpeService; 
+    private IExperienciaService expeService;
     
      //Crear Experiencia
      @PostMapping("/expe/crear")
      public void crearExperiencia (@RequestBody Experiencia expe){
-        ExpeService.crearExperiencia(expe);
+        expeService.crearExperiencia(expe);
     }
      
        // Mostrar Experiencia
     @GetMapping("/expe/mostrar")
     @ResponseBody
      public List<Experiencia> mostrarExperiencia(){
-         return ExpeService.MostrarExpe();
+         return expeService.MostrarExpe();
     }
     
       
     //Edita Experiencia
     @PutMapping("/expe/editar")
     public void editarPersona (@RequestBody Experiencia expe){
-        ExpeService.editarExperiencia(expe);
+        expeService.editarExperiencia(expe);
     }
     
      //Eliminar Experiencia
     @DeleteMapping("/expe/eliminar/{id}")
     public void eliminarPersona( @PathVariable Long id){
-       ExpeService.eliminarExperiencia(id);
+       expeService.eliminarExperiencia(id);
     }
 }
